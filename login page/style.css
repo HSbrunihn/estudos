@@ -1,0 +1,106 @@
+
+
+/*fontes*/
+/*comfortaa*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+body{
+    margin: 0;
+    height: 100vh; /*occupa 100% da altura da tela */
+
+    display: flex; /*flexbox para centralizar*/
+    justify-content: center; /*centraliza horizontalmente*/
+    align-items: center;/*centraliza verticalmente*/
+
+    /*imagem de fundo*/
+    background-image : url(./img/gyarados_background.png);
+    background-size: cover;
+
+    position: relative;/*importante para o overlay funcionar*/
+    overflow: hidden; /*evita problema com determinadas telas*/
+    
+}
+body::before
+{
+    content: "";/*cria o pseudo-elemento*/
+    position: absolute;/*pega a tela full*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background:rgba(0, 0, 0, 0.5) ;
+    z-index: 1;
+}
+
+.paragrafo1
+
+{
+
+    position: absolute;
+    color:#B7B1B1;
+    font-size: 24px;
+     font-family: "Montserrat", sans-serif;
+    margin-bottom: 40vh;
+    text-align: center;
+    justify-content: center;
+   
+    z-index: 2;
+}
+
+h2
+{
+    position: absolute;
+    color: white;
+    font-size:37px ;
+    margin-top: 75vh;
+    width: 521px;
+    height: 150px;
+     text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.paragrafo2
+{
+    position: absolute;
+    color: #B7B1B1;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    width: 617.36px;
+    height: 80px;
+    margin-top: 90vh;
+    text-align: center;
+    justify-content: center;
+  z-index: 2;
+}
+
+h1{
+    position: absolute;
+    color: white;    
+    font-size: 48px;
+    margin-bottom: 55vh;
+    /* top: 228px;
+    left: 817px; */
+    font-family: "Comfortaa", sans-serif;
+    justify-content: center;
+     text-align: center;
+    font-weight: 600;
+    z-index: 2;
+    
+}
+.magikarp img
+{
+   width: 30vh;
+   height: auto;
+    margin-top: 10vh;
+    filter: grayscale(1)brightness(1);
+    opacity: 0.6;
+   /*transform:scale: (2); aumenta 200%*/
+}
