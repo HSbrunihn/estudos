@@ -16,7 +16,7 @@ body{
     align-items: center;/*centraliza verticalmente*/
 
     /*imagem de fundo*/
-    background-image : url(./img/gyarados_background.png);
+    background-image : url(./img/quaza.jpg);
     background-size: cover;
 
     position: relative;/*importante para o overlay funcionar*/
@@ -32,7 +32,7 @@ body::before
     width: 100%;
     height: 100%;
     
-    background:rgba(0, 0, 0, 0.5) ;
+    background:rgba(0, 0, 0, 0.589) ;
     z-index: 1;
 }
 
